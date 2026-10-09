@@ -10,7 +10,7 @@ class TestUpdate:
         print(f"原始课程数据：{data}")
 
 
-        name = f"{data["data"]["name"]}_{int(time.time())}"
+        name = f"{data['data']['name']}_{int(time.time())}"
         subject = str(random.randint(0,6))
         price = random.randint(1000,10000)
         info = f"测试_{int(time.time())}_信息"
@@ -37,10 +37,10 @@ class TestUpdate:
         check_data = response_check.json()
         # 根据实际响应结构调整下面的断言
         # 假设返回的 data 中包含 id, name, price 等字段
-        assert check_data["data"]["name"] == name, f"更新失败：当前名称是{check_data["data"][0]["name"]}"
-        assert check_data["data"]["subject"] == subject, f"更新失败：当前名称是{check_data["data"][0]["subject"]}"
-        assert check_data["data"]["price"] == price, f"更新失败：当前名称是{check_data["data"][0]["price"]}"
-        assert check_data["data"]["info"] == info, f"更新失败：当前名称是{check_data["data"][0]["info"]}"
+        assert check_data["data"]["name"] == name, f"更新失败：当前名称是{check_data['data'][0]['name']}"
+        assert check_data["data"]["subject"] == subject, f"更新失败：当前名称是{check_data['data'][0]['subject']}"
+        assert check_data["data"]["price"] == price, f"更新失败：当前名称是{check_data['data'][0]['price']}"
+        assert check_data["data"]["info"] == info, f"更新失败：当前名称是{check_data['data'][0]['info']}"
 
         print(f"更新后课程数据：{check_data}")
         print(f"课程 {course_id} 更新成功")
@@ -63,7 +63,7 @@ class TestDelete:
         response_check = test_login.get_course_id(course_id)
         check_data = response_check.json()
 
-        assert check_data["code"] == 200, f"更新失败：当前名称是{check_data["msg"]}"
+        assert check_data["code"] == 200, f"更新失败：当前名称是{check_data['msg']}"
         assert check_data["msg"] == "操作成功"
 
         print(f"删除后查询结果：{check_data}")

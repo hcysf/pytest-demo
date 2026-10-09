@@ -45,9 +45,9 @@ class TestXianSuo:
         #校验查询的结果与新增的信息是否准确
         reslut_xiansuo = select_data["rows"][0]
         assert reslut_xiansuo ["name"] ==name, \
-            f"线索名称不匹配: {reslut_xiansuo ["name"]} != {name}"
+            f"线索名称不匹配: {reslut_xiansuo ['name']} != {name}"
         assert reslut_xiansuo ["phone"] == phone, \
-            f"手机号不匹配: {reslut_xiansuo ["name"]} != {phone}"
+            f"手机号不匹配: {reslut_xiansuo ['name']} != {phone}"
 
         xiansuo_id = reslut_xiansuo["id"]
         print(f"用例 {xiansuo_id} 通过!")
