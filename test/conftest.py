@@ -44,7 +44,7 @@ def add_course_id(test_login):
 
     assert response.status_code==200
     data=response.json()
-    assert data['code']==200,f"新增课程失败:{data["msg"]}"
+    assert data['code']==200, f"新增课程失败:{data["msg"]}"
 
     #通过课程名查询是否增加成功，并且拿到其id
     select_response=test_login.select_course(name=name)

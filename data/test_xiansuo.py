@@ -1,7 +1,7 @@
 xiansuo_test_data= [
     {
         "name":"张三三",
-        "phone": "13612341433",
+        "phone":"15027341443",
         "channel": "0",
         "activityId": "",
         "sex": 1,
@@ -11,7 +11,7 @@ xiansuo_test_data= [
     },
     {
         "name":"李四四",
-        "phone": "13612341522",
+        "phone":"15018341532",
         "channel": "0",
         "activityId": "",
         "sex": 0,
@@ -21,7 +21,7 @@ xiansuo_test_data= [
     },
     {
         "name":"王五五",
-        "phone": "",
+        "phone":"15012941532",
         "channel": "0",
         "activityId": "",
         "sex": 0,
