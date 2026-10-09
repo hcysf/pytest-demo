@@ -23,7 +23,7 @@ class ReDate():
     # 定义获取验证码请求
     def get_captchaImage(self):
         # 定义验证码接口的url
-        url = self.base_url + "/api/captchaImage"
+        url ="http://kdtx-test.itheima.net/api/captchaImage"
         #发送请求
         response = self.session.get(url=url, headers=self.headers)
         return response
