@@ -37,7 +37,7 @@ def add_course_id(test_login):
     name = f"测试课程_{int(time.time())}"
     response=test_login.add_course(
         name=name,
-        subject="7",
+        subject="6",
         price=999,
         applicable_person="2",
         info="由fixture创建的测试课程")
